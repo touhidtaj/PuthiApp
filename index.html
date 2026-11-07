@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" class="logo-wait">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/svg+xml" href="assets/Logo/puthi-icon.svg">
+<link rel="icon" type="image/png" href="assets/Logo/favicon.png">
+<link rel="apple-touch-icon" href="assets/Logo/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0c10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="পুঁথি · Puthi: a quiet place to read">
+<meta property="og:description" content="A calm, distraction-free PDF reader for Android. Free, offline, in English, বাংলা and العربية.">
+<meta property="og:image" content="https://touhidtaj.github.io/PuthiApp/assets/Logo/og-cover.png">
+<meta property="og:url" content="https://touhidtaj.github.io/PuthiApp/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://touhidtaj.github.io/PuthiApp/assets/Logo/og-cover.png">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Created by Touhidul Islam, Mobile : +88 01787188885, Portfolio: https://zaap.bio/TouhidDesign">
+<title>Puthi — a quiet place to read</title>
+<meta name="description" content="Puthi is a distraction-free PDF reader for Android. Free, offline, in Bangla, English and Arabic.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=Noto+Serif+Bengali:wght@600;700&amp;family=Noto+Serif+Bengali:wght@400;500&amp;family=Noto+Naskh+Arabic:wght@500;600&amp;display=swap">
+<style>
+.logo-wait .pt-wm{visibility:hidden}
+body{margin:0;background:#F5F0E6}
+a{color:inherit;text-decoration:none}
+.pt-wrap{max-width:1240px;margin:0 auto;padding-left:24px;padding-right:24px;box-sizing:border-box}
+.pt-nav a.l{padding:10px 16px;border-radius:999px;font-size:14px;color:#17130F}
+.pt-nav a.l:hover{background:#17130F0d}
+.pt-btn{transition:transform .2s,box-shadow .2s}
+.pt-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px #17130f33}
+.pt-card{transition:transform .25s,box-shadow .25s}
+.pt-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px #5a3c1e1f}
+details.pt-q summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Instrument Serif',serif;font-size:26px;color:#17130F}
+details.pt-q summary::-webkit-details-marker{display:none}
+details.pt-q summary::after{content:'+';font-family:Inter,sans-serif;font-size:24px;color:#B7311B;flex:none}
+details.pt-q[open] summary::after{content:'–'}
+details.pt-q p{margin:0 0 24px;max-width:640px;font-size:16px;line-height:1.65;color:#5F564B}
+:focus-visible{outline:3px solid #B7311B;outline-offset:3px;border-radius:8px}
+.pt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+@media(max-width:1359px){.pt-float{display:none !important}}
+@media(max-width:1100px){.pt-badge{display:none !important}}
+@media(max-width:820px){.pt-nav{display:none !important}.pt-orb,.pt-orbit{display:none !important}.pt-stage{height:360px !important}.pt-wm{width:280px !important;height:280px !important;margin-left:-140px !important}.pt-orb,.pt-orbit{display:none !important}.pt-stage{height:340px !important;overflow:hidden !important}.pt-glow{top:20px !important;width:340px !important;height:340px !important;margin-left:-170px !important}.pt-stage>img:nth-of-type(1){width:360px !important;margin-left:-170px !important}.pt-stage>img:nth-of-type(2){width:76px !important;margin-left:62px !important}.pt-hero-h{font-size:56px !important}.pt-sec-h{font-size:40px !important}.pt-dl-h{font-size:46px !important}.pt-lang-big{font-size:96px !important}}
+@keyframes pt-slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.pt-track{animation:pt-slide 38s linear infinite}
+@media(prefers-reduced-motion:reduce){.pt-btn,.pt-card{transition:none}.pt-track{animation:none}}
+.pt-link{display:inline-flex;align-items:center;gap:8px;min-height:56px;padding:0 10px;font-size:16px;font-weight:500;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:7px;text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);transition:text-decoration-color .2s,color .2s}
+.pt-link:hover{text-decoration-color:currentColor}
+.pt-fab{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));z-index:50;width:58px;height:58px;border-radius:50%;background:#FF5A3C;color:#17130F;display:grid;place-items:center;box-shadow:0 14px 34px #e2381f55,0 2px 0 #ffffff33 inset;opacity:0;pointer-events:none;transform:translateY(14px) scale(.9);transition:opacity .25s,transform .25s,box-shadow .2s}
+.pt-fab.on{opacity:1;pointer-events:auto;transform:none}
+.pt-fab:hover{box-shadow:0 18px 40px #e2381f77}
+@media(prefers-reduced-motion:reduce){.pt-fab{transition:none}}
+/* motion */
+.pt-wm .bk{stroke:#1a1613;opacity:0;animation:ptFade .7s ease-out .1s forwards}
+:root:not([data-theme=light]) .pt-wm .bk{stroke:#f6efe4}
+.pt-wm .px{opacity:0;transform-box:fill-box;transform-origin:center;animation:ptPx .55s cubic-bezier(.2,.8,.3,1) var(--d,0ms) forwards}
+.pt-wm .px.em{animation:ptPx .55s cubic-bezier(.2,.8,.3,1) var(--d,0ms) forwards,ptEmber 5.5s ease-in-out calc(var(--d,0ms) + 2.2s) infinite}
+@keyframes ptPx{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}
+@keyframes ptFade{to{opacity:1}}
+@keyframes ptEmber{0%,100%{opacity:1}45%{opacity:.15}65%{opacity:.9}}
+@keyframes ptBreathe{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.07);opacity:1}}
+@keyframes ptDrift{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.pt-glow{animation:ptBreathe 6.5s ease-in-out infinite}
+.pt-orb{animation:ptDrift 7s ease-in-out infinite}
+.pt-orb.o2{animation-duration:8.5s;animation-delay:-2s}
+.pt-orb.o3{animation-duration:7.5s;animation-delay:-4s}
+.pt-orb.o4{animation-duration:9s;animation-delay:-1s}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv[data-i="1"]{transition-delay:90ms}.js .rv[data-i="2"]{transition-delay:180ms}.js .rv[data-i="3"]{transition-delay:270ms}.js .rv[data-i="4"]{transition-delay:360ms}
+@media(prefers-reduced-motion:reduce){.pt-wm .px,.pt-wm .px.em,.pt-wm .bk{animation:none !important;opacity:1 !important}.pt-glow,.pt-orb{animation:none !important}.js .rv{opacity:1 !important;transform:none !important;transition:none !important}}
+.pt-theme{width:44px;height:44px;border-radius:999px;border:1px solid #17130f1f;background:#ffffffb0;color:#17130F;display:inline-grid;place-items:center;cursor:pointer;padding:0}
+.pt-sun{display:none}.pt-moon{display:inline}
+:root:not([data-theme=light]) body{background:#0B0907}
+:root:not([data-theme=light]) div[style*="background:#F5F0E6;color:#17130F"]{background:#0B0907 !important;color:#F3EBDD !important}
+:root:not([data-theme=light]) .pt-nav a.l{color:#F3EBDD}
+:root:not([data-theme=light]) .pt-nav a.l:hover{background:#ffffff14}
+:root:not([data-theme=light]) details.pt-q summary{color:#F3EBDD}
+:root:not([data-theme=light]) [style*="color:#17130F"]:not([style*="background:#FF5A3C"]){color:#F3EBDD !important}
+:root:not([data-theme=light]) [style*="color:#5F564B"]{color:#B9AFA0 !important}
+:root:not([data-theme=light]) [style*="color:#6F6558"]{color:#9C9284 !important}
+:root:not([data-theme=light]) [style*="color:#3A322A"]{color:#D5CCBD !important}
+:root:not([data-theme=light]) [style*="color:#4F463B"]{color:#BDB3A4 !important}
+:root:not([data-theme=light]) [style*="color:#B7311B"]{color:#FF7A5C !important}
+:root:not([data-theme=light]) details.pt-q p{color:#B9AFA0}
+:root:not([data-theme=light]) [style*="background:#fff;"]{background:#1D1812 !important}
+:root:not([data-theme=light]) [style*="background:#ffffffb0"]{background:#ffffff12 !important}
+:root:not([data-theme=light]) [style*="background:#ffffffa8"]{background:#ffffff12 !important}
+:root:not([data-theme=light]) [style*="background:linear-gradient(135deg"]{background:linear-gradient(135deg,#27201AF0,#1A1510CC) !important;border-color:#ffffff1f !important;box-shadow:0 30px 60px #00000066 !important}
+:root:not([data-theme=light]) [style*="background:#EADFCB"]{background:#14100C !important}
+:root:not([data-theme=light]) [style*="border-top:1px solid #17130f24"]{border-color:#ffffff1f !important}
+:root:not([data-theme=light]) [style*="border:1px solid #17130f"]{border-color:#ffffff1f !important}
+:root:not([data-theme=light]) [style*="border-top:1px solid #17130f26"],:root:not([data-theme=light]) [style*="border-bottom:1px solid #17130f26"]{border-color:#ffffff26 !important}
+:root:not([data-theme=light]) [style*="border-top:2px solid #17130F"]{border-color:#F3EBDD !important}
+:root:not([data-theme=light]) a.pt-btn[style*="background:#17130F"]{background:#F3EBDD !important;color:#17130F !important}
+:root:not([data-theme=light]) div[style*="width:34px"][style*="background:#17130F"]{background:#2A241C !important}
+:root:not([data-theme=light]) .pt-orbit{border-color:#ffffff1f !important}
+:root:not([data-theme=light]) .pt-badge text{fill:#F3EBDD}
+:root:not([data-theme=light]) .pt-badge-star{fill:#FF7A5C}
+:root:not([data-theme=light]) .pt-theme{background:#ffffff12;border-color:#ffffff1f;color:#F3EBDD}
+:root:not([data-theme=light]) .pt-moon{display:none}
+:root:not([data-theme=light]) .pt-sun{display:inline}
+.pt-logo{box-sizing:border-box;padding:5px;border-radius:12px;background:radial-gradient(circle at 50% 52%,#4b2f1a 0,#15100a 78%);box-shadow:0 6px 16px #3a1e0e2e}
+.pt-logo .lb{stroke:#f6efe4}
+:root:not([data-theme=light]) i[style*="box-shadow:0 0 0 4px #e2381f1f"]{box-shadow:0 0 0 4px #e2381f40 !important}
+</style>
+<style>html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+</head>
+<body>
+<div style="background:#F5F0E6;color:#17130F;font-family:Inter,system-ui,sans-serif;overflow:hidden;position:relative">
+<!-- NAV -->
+<header class="pt-wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:28px;padding-bottom:12px;position:relative;z-index:5">
+  <a href="#top" style="display:flex;align-items:center;gap:10px" aria-label="Puthi home">
+    <svg class="pt-logo" viewBox="0 0 100 100" width="40" height="40" aria-hidden="true"><rect x="47.95" y="8.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="12.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="47.95" y="12.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="47.95" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="52.55" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="66.35" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="22.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="22.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="22.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="22.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="26.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="26.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="26.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="26.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="26.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="31.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="31.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="66.35" y="31.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="35.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="35.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="35.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="35.85" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="35.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="35.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="29.55" y="40.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="40.45" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="38.75" y="40.45" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="40.45" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="40.45" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="40.45" width="4.10" height="4.10" fill="#ffb347"/><rect x="57.15" y="40.45" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="61.75" y="40.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="29.55" y="45.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="45.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="38.75" y="45.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="57.15" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="61.75" y="45.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="66.35" y="45.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="29.55" y="49.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="49.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="38.75" y="49.65" width="4.10" height="4.10" fill="#ffb347"/><rect x="43.35" y="49.65" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="49.65" width="4.10" height="4.10" fill="#fff2c9"/><rect x="52.55" y="49.65" width="4.10" height="4.10" fill="#fff2c9"/><rect x="57.15" y="49.65" width="4.10" height="4.10" fill="#ffb347"/><rect x="61.75" y="49.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="66.35" y="49.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="54.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="54.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="54.25" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="54.25" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="54.25" width="4.10" height="4.10" fill="#ffb347"/><rect x="57.15" y="54.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="61.75" y="54.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="58.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="58.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="58.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="58.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="58.85" width="4.10" height="4.10" fill="#e2381f"/><path class="lb"  d="M10 77h29.756c0.156 0 0.305 0.066 0.41 0.182l8.197 9.016c0.879 0.967 2.398 0.967 3.277 0l8.197 -9.016c0.105 -0.115 0.254 -0.182 0.41 -0.182h29.756" fill="none" stroke-width="10" stroke-linejoin="bevel"/></svg>
+    <span style="font-family:'Noto Serif Bengali',serif;font-weight:700;font-size:26px;line-height:1">পুঁথি</span>
+  </a>
+  <nav class="pt-nav" aria-label="Sections" style="display:flex;gap:4px;padding:5px;border-radius:999px;background:#ffffffa8;border:1px solid #17130f14;backdrop-filter:blur(10px)">
+    <a class="l" href="#features">Features</a>
+    <a class="l" href="#languages">Languages</a>
+    <a class="l" href="#how">How it works</a>
+    <a class="l" href="#faq">FAQ</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:10px">
+    <button class="pt-theme" type="button" aria-label="Switch light or dark theme" id="themeBtn"><svg class="pt-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12.8A9 9 0 1 1 11.2 4a7 7 0 0 0 8.8 8.8z"></path></svg><svg class="pt-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+  </div>
+</header>
+<a id="ptFab" class="pt-fab" href="downloads/puthi-v1.0.apk" download="puthi-v1.0.apk" aria-label="Download the Puthi APK" title="Download APK"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"></path></svg></a>
+
+<!-- HERO -->
+<section id="top" style="position:relative;padding-top:56px">
+  <div class="pt-badge" style="position:absolute;right:max(24px,6vw);top:64px;width:120px;height:120px;z-index:2">
+    <svg viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Free for everyone, forever">
+      <defs><path id="ring" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"></path></defs>
+      <text font-family="Inter" font-size="9.4" letter-spacing="3.1" fill="#17130F"><textPath href="#ring">FREE FOR EVERYONE · FOREVER · FREE FOR ALL ·</textPath></text>
+      <path d="M60 44 L63 57 L76 60 L63 63 L60 76 L57 63 L44 60 L57 57 Z" fill="#B7311B"></path>
+    </svg>
+  </div>
+
+  <div class="pt-wrap" style="text-align:center;position:relative;z-index:2">
+    <h1 class="pt-hero-h" style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:116px;line-height:.95;letter-spacing:-.02em">A quiet place<br><em>to read.</em></h1>
+    <p style="margin:28px auto 0;max-width:600px;font-size:18px;line-height:1.6;color:#5F564B">Puthi finds the PDFs on your phone, lays them out like a bookshelf, and opens them full-screen with nothing in the way. Highlight in your own colours, pin notes anywhere, and read in English, বাংলা or العربية. <br><strong style="display:inline-block;margin-top:10px;color:#17130F;font-weight:600">Nothing ever leaves your phone.</strong></p>
+    <div style="margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a id="heroDl" class="pt-btn" href="downloads/puthi-v1.0.apk" download="puthi-v1.0.apk" style="display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 30px;border-radius:999px;background:#17130F;color:#F5F0E6;font-size:16px;font-weight:600">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"></path></svg>
+        Download APK
+      </a>
+      <a class="pt-link" href="#how">See how it works</a>
+    </div>
+    <div style="margin-top:14px;font-size:13px;color:#6F6558">Android 10 or newer · Version 1.0 · Free, forever</div>
+    <div style="margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-size:13px;color:#3A322A">
+      <span style="padding:8px 14px;border-radius:999px;background:#ffffffb0;border:1px solid #17130f1a">Works fully offline</span>
+      <span style="padding:8px 14px;border-radius:999px;background:#ffffffb0;border:1px solid #17130f1a">No internet permission</span>
+      <span style="padding:8px 14px;border-radius:999px;background:#ffffffb0;border:1px solid #17130f1a">No account · No ads</span>
+    </div>
+  </div>
+
+  <!-- hero visual: the wordmark, lit -->
+  <div class="pt-wrap pt-stage" style="position:relative;margin-top:30px;height:640px;perspective:1500px">
+    <div class="pt-orbit" style="position:absolute;left:50%;top:200px;width:1020px;height:420px;margin-left:-510px;border:1px solid #17130f1f;border-radius:50%"></div>
+    <div class="pt-glow" style="position:absolute;left:50%;top:60px;width:560px;height:560px;margin-left:-280px;border-radius:50%;background:radial-gradient(closest-side,#ffb34755,#ffb34700)"></div>
+    <svg class="pt-wm" role="img" aria-label="Puthi: a pixel flame over an open book" viewBox="0 0 100 100" style="position:absolute;left:50%;top:50px;width:460px;height:460px;margin-left:-230px;z-index:2;filter:drop-shadow(0 30px 50px #e2381f2e);overflow:visible"><rect class="px em" style="--d:817ms" x="47.95" y="8.25" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:789ms" x="43.35" y="12.85" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:762ms" x="47.95" y="12.85" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:734ms" x="43.35" y="17.45" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:707ms" x="47.95" y="17.45" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:710ms" x="52.55" y="17.45" width="4.1" height="4.1" fill="#e2381f"/><rect class="px em" style="--d:793ms" x="66.35" y="17.45" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:707ms" x="38.75" y="22.05" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:679ms" x="43.35" y="22.05" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:652ms" x="47.95" y="22.05" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:655ms" x="52.55" y="22.05" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:652ms" x="38.75" y="26.65" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:624ms" x="43.35" y="26.65" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:597ms" x="47.95" y="26.65" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:600ms" x="52.55" y="26.65" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:627ms" x="57.15" y="26.65" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:625ms" x="34.15" y="31.25" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:597ms" x="38.75" y="31.25" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:569ms" x="43.35" y="31.25" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:542ms" x="47.95" y="31.25" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:545ms" x="52.55" y="31.25" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:572ms" x="57.15" y="31.25" width="4.1" height="4.1" fill="#e2381f"/><rect class="px em" style="--d:628ms" x="66.35" y="31.25" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:570ms" x="34.15" y="35.85" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:542ms" x="38.75" y="35.85" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:514ms" x="43.35" y="35.85" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:487ms" x="47.95" y="35.85" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:490ms" x="52.55" y="35.85" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:517ms" x="57.15" y="35.85" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:542ms" x="29.55" y="40.45" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:515ms" x="34.15" y="40.45" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:487ms" x="38.75" y="40.45" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:459ms" x="43.35" y="40.45" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:432ms" x="47.95" y="40.45" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:435ms" x="52.55" y="40.45" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:462ms" x="57.15" y="40.45" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:490ms" x="61.75" y="40.45" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:487ms" x="29.55" y="45.05" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:460ms" x="34.15" y="45.05" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:432ms" x="38.75" y="45.05" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:404ms" x="43.35" y="45.05" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:377ms" x="47.95" y="45.05" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:380ms" x="52.55" y="45.05" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:407ms" x="57.15" y="45.05" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:435ms" x="61.75" y="45.05" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:463ms" x="66.35" y="45.05" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:432ms" x="29.55" y="49.65" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:405ms" x="34.15" y="49.65" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:377ms" x="38.75" y="49.65" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:349ms" x="43.35" y="49.65" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:322ms" x="47.95" y="49.65" width="4.1" height="4.1" fill="#fff2c9"/><rect class="px" style="--d:325ms" x="52.55" y="49.65" width="4.1" height="4.1" fill="#fff2c9"/><rect class="px" style="--d:352ms" x="57.15" y="49.65" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:380ms" x="61.75" y="49.65" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:408ms" x="66.35" y="49.65" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:350ms" x="34.15" y="54.25" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:322ms" x="38.75" y="54.25" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:294ms" x="43.35" y="54.25" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:267ms" x="47.95" y="54.25" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:270ms" x="52.55" y="54.25" width="4.1" height="4.1" fill="#ffb347"/><rect class="px" style="--d:297ms" x="57.15" y="54.25" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:325ms" x="61.75" y="54.25" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:267ms" x="38.75" y="58.85" width="4.1" height="4.1" fill="#e2381f"/><rect class="px" style="--d:239ms" x="43.35" y="58.85" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:212ms" x="47.95" y="58.85" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:215ms" x="52.55" y="58.85" width="4.1" height="4.1" fill="#ff5a3c"/><rect class="px" style="--d:242ms" x="57.15" y="58.85" width="4.1" height="4.1" fill="#e2381f"/><path class="bk" d="M10 77h29.756c0.156 0 0.305 0.066 0.41 0.182l8.197 9.016c0.879 0.967 2.398 0.967 3.277 0l8.197 -9.016c0.105 -0.115 0.254 -0.182 0.41 -0.182h29.756" fill="none" stroke-width="10" stroke-linejoin="bevel"/></svg>
+    <div class="pt-orb o1" style="position:absolute;left:3%;top:110px;width:232px;transform:rotateY(24deg) rotateZ(-4deg);border-radius:28px;background:linear-gradient(135deg,#ffffffe0,#ffffff80);border:1px solid #fff;box-shadow:0 30px 60px #5a3c1e22;backdrop-filter:blur(14px);padding:22px;box-sizing:border-box;z-index:4">
+      <div style="width:34px;height:34px;border-radius:12px;background:#17130F;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB347" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg></div>
+      <div style="margin-top:14px;font-family:'Instrument Serif',serif;font-size:27px;line-height:1.08">Shelves, not folders.</div>
+      <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#5F564B">Every PDF becomes a cover. Pick up exactly where you stopped.</div>
+    </div>
+
+    <div class="pt-orb o2" style="position:absolute;left:17%;top:400px;width:222px;transform:rotateY(16deg) rotateZ(2deg);border-radius:28px;background:linear-gradient(135deg,#ffffffe0,#ffffff80);border:1px solid #fff;box-shadow:0 30px 60px #5a3c1e22;backdrop-filter:blur(14px);padding:22px;box-sizing:border-box;z-index:4">
+      <div style="width:34px;height:34px;border-radius:12px;background:#B7311B;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path></svg></div>
+      <div style="margin-top:14px;font-family:'Instrument Serif',serif;font-size:27px;line-height:1.08">Mark it your way.</div>
+      <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#5F564B">Highlight, underline, notes and remarks.</div>
+    </div>
+
+    <div class="pt-orb o3" style="position:absolute;right:3%;top:90px;width:240px;transform:rotateY(-24deg) rotateZ(4deg);border-radius:28px;background:linear-gradient(135deg,#ffffffe0,#ffffff80);border:1px solid #fff;box-shadow:0 30px 60px #5a3c1e22;backdrop-filter:blur(14px);padding:22px;box-sizing:border-box;z-index:4">
+      <div style="width:34px;height:34px;border-radius:12px;background:#17130F;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB347" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg></div>
+      <div style="margin-top:14px;font-family:'Instrument Serif',serif;font-size:27px;line-height:1.08">বাংলা · العربية · English</div>
+      <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#5F564B">Switch the whole app any time.</div>
+    </div>
+
+    <div class="pt-orb o4" style="position:absolute;right:16%;top:420px;width:230px;transform:rotateY(-16deg) rotateZ(-2deg);border-radius:28px;background:linear-gradient(135deg,#ffffffe0,#ffffff80);border:1px solid #fff;box-shadow:0 30px 60px #5a3c1e22;backdrop-filter:blur(14px);padding:22px;box-sizing:border-box;z-index:4">
+      <div style="width:34px;height:34px;border-radius:12px;background:#B7311B;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12.8A9 9 0 1 1 11.2 4a7 7 0 0 0 8.8 8.8z"></path></svg></div>
+      <div style="margin-top:14px;font-family:'Instrument Serif',serif;font-size:27px;line-height:1.08">Stays on your phone.</div>
+      <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#5F564B">The app can't even go online. Your notes are yours.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- READING STRIP -->
+<section aria-label="What people read in Puthi" style="background:#17130F;color:#F5F0E6;padding:26px 0;overflow:hidden">
+  <div class="pt-track" style="display:flex;width:max-content;font-family:'Instrument Serif','Noto Serif Bengali','Noto Naskh Arabic',serif;font-size:28px;white-space:nowrap">
+    <div style="display:flex;gap:40px;padding-right:40px"><span>পাঠ্যবই</span><span style="color:#FF5A3C">✦</span><span>Novels</span><span style="color:#FF5A3C">✦</span><span>কবিতা</span><span style="color:#FF5A3C">✦</span><span>Research papers</span><span style="color:#FF5A3C">✦</span><span>مخطوطات</span><span style="color:#FF5A3C">✦</span><span>Study notes</span><span style="color:#FF5A3C">✦</span><span>গল্প</span><span style="color:#FF5A3C">✦</span><span>Manuals</span><span style="color:#FF5A3C">✦</span></div>
+    <div style="display:flex;gap:40px;padding-right:40px" aria-hidden="true"><span>পাঠ্যবই</span><span style="color:#FF5A3C">✦</span><span>Novels</span><span style="color:#FF5A3C">✦</span><span>কবিতা</span><span style="color:#FF5A3C">✦</span><span>Research papers</span><span style="color:#FF5A3C">✦</span><span>مخطوطات</span><span style="color:#FF5A3C">✦</span><span>Study notes</span><span style="color:#FF5A3C">✦</span><span>গল্প</span><span style="color:#FF5A3C">✦</span><span>Manuals</span><span style="color:#FF5A3C">✦</span></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="pt-wrap" style="padding-top:120px;padding-bottom:40px">
+  <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B7311B;font-weight:600">What is inside</div>
+  <h2 class="pt-sec-h rv" style="margin:14px 0 0;max-width:760px;font-family:'Instrument Serif',serif;font-weight:400;font-size:64px;line-height:1.02;letter-spacing:-.015em">Everything a reader needs. <em>Nothing that gets in the way.</em></h2>
+  <div class="pt-grid" style="margin-top:56px">
+    <article class="pt-card rv" style="min-height:260px;padding:30px;border-radius:32px;background:#fff;border:1px solid #17130f12;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="width:48px;height:48px;border-radius:16px;background:#F5F0E6;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1.5"></rect><rect x="13" y="4" width="8" height="16" rx="1.5"></rect></svg></div>
+      <div><h3 style="margin:0 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:32px;line-height:1.05">A home that feels like a bookshelf</h3>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#5F564B">Rows of covers made from each book's first page: Recently Read, Favorites, All Books.</p></div>
+    </article>
+    <article class="pt-card rv" style="min-height:260px;padding:30px;border-radius:32px;background:#17130F;color:#F5F0E6;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="width:48px;height:48px;border-radius:16px;background:#ffffff14;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFB347" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg></div>
+      <div><h3 style="margin:0 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:32px;line-height:1.05">Just the page</h3>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#d9d0c2">Full-screen reading. Tap the middle for a page slider, dark mode and bookmark. Pinch to zoom.</p></div>
+    </article>
+    <article class="pt-card rv" style="min-height:260px;padding:30px;border-radius:32px;background:#fff;border:1px solid #17130f12;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="width:48px;height:48px;border-radius:16px;background:#FFE6A8;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path></svg></div>
+      <div><h3 style="margin:0 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:32px;line-height:1.05">Mark it your way</h3>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#5F564B">Highlight in any colour you like, underline, strike, drop sticky notes, write a remark on any page.</p></div>
+    </article>
+    <article class="pt-card rv" style="min-height:260px;padding:30px;border-radius:32px;background:#fff;border:1px solid #17130f12;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="width:48px;height:48px;border-radius:16px;background:#F5F0E6;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg></div>
+      <div><h3 style="margin:0 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:32px;line-height:1.05">Take your notes with you</h3>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#5F564B">Export everything you marked as a Word document or a PDF, in one tap.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages" class="pt-wrap" style="padding-top:110px;padding-bottom:40px">
+  <div class="rv" style="border-radius:44px;background:#EADFCB;padding:72px 48px;display:flex;flex-wrap:wrap;gap:48px;align-items:center;justify-content:space-between">
+    <div style="flex:1 1 380px;min-width:0">
+      <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B7311B;font-weight:600">Three languages</div>
+      <div class="pt-lang-big" style="margin-top:8px;font-family:'Noto Serif Bengali',serif;font-weight:700;font-size:150px;line-height:1.15">পুঁথি</div>
+      <h2 class="pt-sec-h rv" style="margin:8px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:50px;line-height:1.04">The tradition of Bangla reading, <em>in a modern light.</em></h2>
+      <p style="margin:18px 0 0;max-width:460px;font-size:16px;line-height:1.65;color:#4F463B">Switch the whole app between English, Bangla and Arabic at any time. Arabic flips the layout right to left.</p>
+    </div>
+    <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:14px">
+      <div style="padding:20px 2px;border-top:1px solid #17130f24;display:flex;justify-content:space-between;align-items:center;gap:16px">
+        <span style="font-family:'Instrument Serif',serif;font-size:30px">Read at your own pace</span><span style="font-size:12px;letter-spacing:.1em;color:#6F6558">ENGLISH</span></div>
+      <div style="padding:20px 2px;border-top:1px solid #17130f24;display:flex;justify-content:space-between;align-items:center;gap:16px">
+        <span style="font-family:'Noto Serif Bengali',serif;font-weight:500;font-size:24px">নিজের গতিতে পড়ুন</span><span style="font-size:12px;letter-spacing:.1em;color:#6F6558">বাংলা</span></div>
+      <div dir="rtl" style="padding:20px 2px;border-top:1px solid #17130f24;display:flex;justify-content:space-between;align-items:center;gap:16px">
+        <span style="font-family:'Noto Naskh Arabic',serif;font-weight:600;font-size:26px">اقرأ بوتيرتك الخاصة</span><span style="font-size:12px;color:#6F6558">العربية</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="pt-wrap" style="padding-top:110px;padding-bottom:40px">
+  <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B7311B;font-weight:600">How it works</div>
+  <h2 class="pt-sec-h rv" style="margin:14px 0 0;max-width:700px;font-family:'Instrument Serif',serif;font-weight:400;font-size:64px;line-height:1.02;letter-spacing:-.015em">Three steps. <em>Then just read.</em></h2>
+  <div style="margin-top:52px;display:flex;flex-wrap:wrap;gap:20px">
+    <div class="rv" style="flex:1 1 280px;padding:32px;border-top:2px solid #17130F">
+      <div style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#B7311B">1</div>
+      <h3 style="margin:16px 0 8px;font-family:'Instrument Serif',serif;font-weight:400;font-size:30px">Download and install</h3>
+      <p style="margin:0;font-size:15px;line-height:1.65;color:#5F564B">Tap Download APK below. When Android asks, allow installs from your browser, then open the file.</p>
+    </div>
+    <div class="rv" style="flex:1 1 280px;padding:32px;border-top:2px solid #17130F">
+      <div style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#B7311B">2</div>
+      <h3 style="margin:16px 0 8px;font-family:'Instrument Serif',serif;font-weight:400;font-size:30px">Choose your PDFs</h3>
+      <p style="margin:0;font-size:15px;line-height:1.65;color:#5F564B">Point Puthi at your Downloads folder once. Your books appear as covers. Nothing is uploaded anywhere.</p>
+    </div>
+    <div class="rv" style="flex:1 1 280px;padding:32px;border-top:2px solid #17130F">
+      <div style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#B7311B">3</div>
+      <h3 style="margin:16px 0 8px;font-family:'Instrument Serif',serif;font-weight:400;font-size:30px">Read and mark</h3>
+      <p style="margin:0;font-size:15px;line-height:1.65;color:#5F564B">Tap the middle of a page for controls. Select text to highlight, or add a note or remark.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download" class="pt-wrap" style="padding-top:110px;padding-bottom:40px">
+  <div class="rv" style="position:relative;border-radius:48px;background:#17130F;color:#F5F0E6;padding:84px 48px;text-align:center;overflow:hidden">
+    <div style="display:inline-grid;place-items:center;width:112px;height:112px;border-radius:30px;background:#0d0a08;border:1px solid #ffffff1f">
+      <svg class="pt-mark" style="display:block" viewBox="0 0 100 100" width="84" height="84" role="img" aria-label="Puthi mark"><rect x="47.95" y="8.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="12.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="47.95" y="12.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="47.95" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="52.55" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="66.35" y="17.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="22.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="22.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="22.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="22.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="26.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="26.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="26.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="26.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="26.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="31.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="31.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="31.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="66.35" y="31.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="35.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="35.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="35.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="35.85" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="35.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="35.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="29.55" y="40.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="40.45" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="38.75" y="40.45" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="40.45" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="40.45" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="40.45" width="4.10" height="4.10" fill="#ffb347"/><rect x="57.15" y="40.45" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="61.75" y="40.45" width="4.10" height="4.10" fill="#e2381f"/><rect x="29.55" y="45.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="45.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="38.75" y="45.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="57.15" y="45.05" width="4.10" height="4.10" fill="#ffb347"/><rect x="61.75" y="45.05" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="66.35" y="45.05" width="4.10" height="4.10" fill="#e2381f"/><rect x="29.55" y="49.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="49.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="38.75" y="49.65" width="4.10" height="4.10" fill="#ffb347"/><rect x="43.35" y="49.65" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="49.65" width="4.10" height="4.10" fill="#fff2c9"/><rect x="52.55" y="49.65" width="4.10" height="4.10" fill="#fff2c9"/><rect x="57.15" y="49.65" width="4.10" height="4.10" fill="#ffb347"/><rect x="61.75" y="49.65" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="66.35" y="49.65" width="4.10" height="4.10" fill="#e2381f"/><rect x="34.15" y="54.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="54.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="43.35" y="54.25" width="4.10" height="4.10" fill="#ffb347"/><rect x="47.95" y="54.25" width="4.10" height="4.10" fill="#ffb347"/><rect x="52.55" y="54.25" width="4.10" height="4.10" fill="#ffb347"/><rect x="57.15" y="54.25" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="61.75" y="54.25" width="4.10" height="4.10" fill="#e2381f"/><rect x="38.75" y="58.85" width="4.10" height="4.10" fill="#e2381f"/><rect x="43.35" y="58.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="47.95" y="58.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="52.55" y="58.85" width="4.10" height="4.10" fill="#ff5a3c"/><rect x="57.15" y="58.85" width="4.10" height="4.10" fill="#e2381f"/><path stroke="#f6efe4" d="M10 77h29.756c0.156 0 0.305 0.066 0.41 0.182l8.197 9.016c0.879 0.967 2.398 0.967 3.277 0l8.197 -9.016c0.105 -0.115 0.254 -0.182 0.41 -0.182h29.756" fill="none" stroke-width="10" stroke-linejoin="bevel"/></svg>
+    </div>
+    <h2 class="pt-dl-h" style="margin:28px auto 0;max-width:760px;font-family:'Instrument Serif',serif;font-weight:400;font-size:76px;line-height:1;letter-spacing:-.02em">Free for everyone. <em>Forever.</em></h2>
+    <p style="margin:20px auto 0;max-width:520px;font-size:17px;line-height:1.6;color:#d9d0c2">No subscription, no ads, no sign-up. Download Puthi and start reading in a minute.</p>
+    <div style="margin-top:36px">
+      <a class="pt-btn" href="downloads/puthi-v1.0.apk" download="puthi-v1.0.apk" style="display:inline-flex;align-items:center;gap:12px;min-height:64px;padding:0 38px;border-radius:999px;background:#FF5A3C;color:#17130F;font-size:18px;font-weight:600">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"></path></svg>
+        Download APK
+      </a>
+    </div>
+    <div style="margin-top:18px;font-size:14px;color:#cfc5b5">Android 10 or newer · Version 1.0</div>
+    <div class="pt-dl" style="display:none;margin-top:6px;font-size:13px;color:#a89f90"><span data-stat="downloads">0</span> downloads</div>
+    <div style="margin:40px auto 0;max-width:500px;padding-top:26px;border-top:1px solid #ffffff22;text-align:center;font-size:14px;line-height:1.7;color:#cfc5b5">
+      <strong style="color:#F5F0E6;font-weight:600">First time installing an APK?</strong><br>Your phone may ask you to allow installs from your browser. Open Settings, allow it for this browser only, and go back to the file. You can switch the permission off afterwards.
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="pt-wrap" style="padding-top:110px;padding-bottom:100px">
+  <div style="max-width:820px;margin:0 auto">
+    <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B7311B;font-weight:600">Questions</div>
+    <h2 class="pt-sec-h rv" style="margin:14px 0 36px;font-family:'Instrument Serif',serif;font-weight:400;font-size:64px;line-height:1.02;letter-spacing:-.015em">Good to know.</h2>
+    <details class="pt-q rv" style="border-top:1px solid #17130f26"><summary>Is it really free?</summary><p>Yes. Puthi is free for everyone, forever. There is no subscription, no in-app purchase and no advertising.</p></details>
+    <details class="pt-q rv" style="border-top:1px solid #17130f26"><summary>Does it need internet?</summary><p>No. Reading, highlighting, notes and exporting all work offline. Internet is only needed to download the app itself.</p></details>
+    <details class="pt-q rv" style="border-top:1px solid #17130f26"><summary>Where do my books and notes live?</summary><p>On your phone only. Puthi keeps your library, highlights, notes and progress in the app's own storage and never uploads them.</p></details>
+    <details class="pt-q rv" style="border-top:1px solid #17130f26"><summary>How does Puthi find my PDFs?</summary><p>You choose a folder, such as Downloads, and Puthi lists every PDF inside. You can also add single files at any time.</p></details>
+    <details class="pt-q rv" style="border-top:1px solid #17130f26;border-bottom:1px solid #17130f26"><summary>Can I take my notes out?</summary><p>Yes. Export your highlights, notes and remarks for one book or all books as a Word document or a PDF.</p></details>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#17130F;color:#F5F0E6;padding:48px 0">
+  <div class="pt-wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <span style="font-family:'Noto Serif Bengali',serif;font-weight:700;font-size:26px">পুঁথি</span>
+      <span style="font-size:14px;color:#cfc5b5">PDF Reader</span>
+    </div>
+    <div style="font-size:14px;color:#cfc5b5">Created by Touhidul Islam · <a href="https://www.facebook.com/TouhidDesigner/" target="_blank" rel="noopener noreferrer" style="color:#F5F0E6;text-decoration:underline;text-underline-offset:4px">Follow on Facebook</a></div>
+    <div style="font-size:13px;color:#a89f90">© 2026 Puthi. Free for everyone.</div>
+  </div>
+</footer>
+
+</div>
+<script>(function(){
+var els=[].slice.call(document.querySelectorAll('.rv'));if('IntersectionObserver' in window&&els.length){document.documentElement.classList.add('js');els.forEach(function(el){var sib=[].filter.call(el.parentElement.children,function(c){return c.classList.contains('rv')});el.setAttribute('data-i',String(Math.min(sib.indexOf(el),4)))});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -6% 0px'});els.forEach(function(el){io.observe(el)})}
+var fab=document.getElementById('ptFab'),hero=document.getElementById('heroDl'),dl=document.getElementById('download');function upd(){if(!fab||!hero||!dl)return;var hb=hero.getBoundingClientRect().bottom,r=dl.getBoundingClientRect();var inDl=r.top<window.innerHeight*0.85&&r.bottom>0;fab.classList.toggle('on',hb<0&&!inDl)}addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+try{var t=localStorage.getItem('puthi.theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+document.getElementById('themeBtn').addEventListener('click',function(){var r=document.documentElement;var c=r.getAttribute('data-theme')||'dark';var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('puthi.theme',n)}catch(e){}});
+})();</script>
+<script src="apk-link.js"></script>
+<script src="assets/logo-loader.js" defer></script>
+<script src="assets/stats.js" defer></script>
+<script>(function(){var u=window.PUTHI_APK;if(!u)return;[].forEach.call(document.querySelectorAll('a[href$="puthi-v1.0.apk"]'),function(a){a.setAttribute("href",u)})})();</script>
+</body>
+</html>
