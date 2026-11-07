@@ -7,7 +7,7 @@
 A calm, distraction-free PDF reader for Android.<br>
 The tradition of Bangla reading, in a modern light.
 
-**[⬇ Download the APK](https://touhidtaj.github.io/PuthiApp/downloads/puthi-v1.0.apk)** &nbsp;·&nbsp; **[Visit the website](https://touhidtaj.github.io/PuthiApp/)**
+**[⬇ Download the APK](https://github.com/touhidtaj/PuthiApp/releases/latest/download/puthi-v1.0.apk)** &nbsp;·&nbsp; **[Visit the website](https://touhidtaj.github.io/PuthiApp/)**
 
 `Android 10+` &nbsp; `No internet permission` &nbsp; `No ads · No accounts · No tracking` &nbsp; `Free for everyone, forever`
 
@@ -64,7 +64,7 @@ The website shows how many times the APK has been downloaded. That number comes 
 
 ## Install
 
-1. Open the **[download link](https://touhidtaj.github.io/PuthiApp/downloads/puthi-v1.0.apk)** on your Android phone.
+1. Open the **[download link](https://github.com/touhidtaj/PuthiApp/releases/latest/download/puthi-v1.0.apk)** on your Android phone.
 2. Chrome may warn that the file "can harm your device". This appears for every app installed outside the Play Store. Choose **Download anyway**.
 3. Open the file. If asked, allow **Install unknown apps** for your browser.
 4. Open পুঁথি and allow file access, so it can find your PDFs.
